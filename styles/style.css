@@ -248,5 +248,23 @@ hr {
         width: 50%;
     }
 
+    .flaxible-container {
+        background-color: #FFFFFF;
+        flex-direction: column;
+    }
+
+    .blog-section {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .button-container {
+        background-color: #FFFFFF;
+
+    }
+
+    footer {
+        width: 100%;
+    }
+
 
 }
