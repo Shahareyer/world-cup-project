@@ -5,16 +5,14 @@
 body {
     font-family: 'Poppins', sans-serif;
     background: #FFFFFF;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
 }
 
 main {
-
-    /* padding-top: 50px; */
-    padding: 50px 140px 130px 140px;
-
+    /* padding: 50px 140px 130px 140px; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
 }
 
 
@@ -24,7 +22,7 @@ main {
 
 .container {
     background-color: #161616;
-    width: 1330px;
+    width: 90%;
     border-radius: 30px;
     display: flex;
     align-items: center;
@@ -42,8 +40,6 @@ main {
 
 .banner-image img {
     width: 100%;
-    width: 590px;
-    height: 695px;
 }
 
 
@@ -76,20 +72,57 @@ main {
 
 .banner-image {
     margin-right: 50px;
-    padding-top: 120px;
 
+
+}
+
+/* ----------------------------
+-- flaxible-container and --
+ - blog section item - 
+ ------------------------------ */
+
+.flaxible-container {
+    display: flex;
+    margin-top: 130px;
+    width: 90%;
+}
+
+.button-container {
+    background-color: #161616;
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    height: 312px;
+    width: 312px;
+    border-radius: 10px;
+}
+
+.anchor {
+    text-align: center;
+    text-decoration: none;
+    background-color: white;
+    font-size: 20px;
+    margin-top: 30px;
+    border-radius: 10px;
+    padding: 15px;
+
+}
+
+.blog {
+    color: #FFFFFF;
+    background-color: #DD0000;
 }
 
 /* ----------------------
    - blog section item -
 ---------------------- */
 .blog-section {
-    width: 1330px;
+    width: 100%;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     column-gap: 30px;
     row-gap: 30px;
-    margin-top: 130px;
+    margin-left: 25px;
 }
 
 .blog-section .blog-container [type="button"] {
@@ -130,9 +163,11 @@ span {
 -------------------------- */
 footer {
     background-color: #161616;
-    /* width: 1600px; */
     width: 100%;
     color: #FFFFFF;
+    height: 800px;
+    padding-top: 100px;
+    margin-top: 130px;
 }
 
 #heading {
@@ -166,3 +201,52 @@ hr {
 }
 
 /* end the footer  */
+
+
+/* ---------------------
+---- @media and Qyaries ----
+ -----------------------*/
+
+/* mobile device */
+@media only screen and (max-width:688px) {
+    main {
+        width: 90%;
+    }
+
+    .container,
+    .flaxible-container {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .blog-section {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .button-container {
+        align-items: center;
+        background-color: #FFFFFF;
+    }
+
+    .info-container {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+/*----------------
+ tablet device
+ ---------------- */
+
+@media only screen and (min-width:689px) and (max-width:992px) {
+    .container {
+        width: 100%;
+    }
+
+    .banner-detil,
+    .banner-image {
+        width: 50%;
+    }
+
+
+}

@@ -26,7 +26,7 @@ main {
 
 .container {
     background-color: #161616;
-    width: 1330px;
+    width: 100%;
     border-radius: 30px;
     display: flex;
     align-items: center;
@@ -44,8 +44,6 @@ main {
 
 .banner-image img {
     width: 100%;
-    width: 590px;
-    height: 695px;
 }
 
 
@@ -78,20 +76,54 @@ main {
 
 .banner-image {
     margin-right: 50px;
-    padding-top: 120px;
+}
 
+/* ----------------------------
+-- flaxible-container and --
+ - upcoming section item - 
+ ------------------------------ */
+
+.flaxible-container {
+    display: flex;
+    margin-top: 130px;
+}
+
+.button-container {
+    background-color: #161616;
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    height: 312px;
+    width: 312px;
+    border-radius: 10px;
+}
+
+.anchor {
+    text-align: center;
+    text-decoration: none;
+    background-color: white;
+    font-size: 20px;
+    margin-top: 30px;
+    border-radius: 10px;
+    padding: 15px;
+
+}
+
+.upcoming-match {
+    background-color: #DD0000;
+    color: #FFFFFF;
 }
 
 /* -------------------------------
 --- upcoming details and info ---
 ----------------------------------  */
 .upcoming-section {
-    width: 1330px;
+    width: 100%;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     column-gap: 30px;
     row-gap: 30px;
-    margin-top: 130px;
+    margin-left: 25px;
 }
 
 .upcoming-container {
