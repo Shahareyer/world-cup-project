@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400&family=Edu+VIC+WA+NT+Beginner&family=Mingzat&family=Poppins:ital,wght@0,400;0,500;0,700;1,200&family=Rubik+Moonrocks&display=swap');
+
+/* simple font */
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main {
+
+    /* padding-top: 50px; */
+    padding: 50px 140px 130px 140px;
+
+}
+
+
+/* ------------------
+   banner section 
+  --------------------- */
+
+.container {
+    background-color: #161616;
+    width: 1330px;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+}
+
+.banner-detil,
+.banner-image {
+    width: 50%;
+}
+
+.banner-detil {
+    padding: 112px 105px 152px 87px;
+    font-size: 10vw;
+}
+
+.banner-image img {
+    width: 100%;
+    width: 590px;
+    height: 695px;
+}
+
+
+.banner-info {
+    font-size: 70px;
+    color: #FFFFFF;
+    margin-bottom: 4px;
+}
+
+.banner-story {
+    font-size: 16px;
+    color: #FFFFFF;
+    margin-bottom: 30px;
+}
+
+.button {
+    font-size: 20px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #FFFFFF;
+    background-color: #DD0000;
+    padding: 16px 25px;
+    border-radius: 5px;
+    width: 30%;
+    gap: 10px;
+
+}
+
+.banner-image {
+    margin-right: 50px;
+    padding-top: 120px;
+
+}
